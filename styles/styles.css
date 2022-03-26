@@ -11,23 +11,17 @@ body
 
 ul li.T1
 {
-  background: #888888;
-  color: #ff0000;
+  background: #ff0000;
+  color: #000000;
 }
 
 ul li.T2
 {
-  background: #888888;
-  color: #ff9900;
+  background: #ff9900;
+  color: #000000;
 }
 
-ul li.T3
-{
-  background: #888888;
-  color: #fffb00;
-}
-
-ul li.T4
+ul li.checked
 {
   background: #888888;
   color: #000000;
