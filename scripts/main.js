@@ -37,6 +37,9 @@ function loadData(dataPath)
       {
         groupsHtml += generateGroup(group.name, group.items, false);
       }
+
+      
+      document.getElementById("htmlWrapper").innerHTML = groupsHtml;
     })
     .catch (function(error)
     {
@@ -53,9 +56,6 @@ Tier
 4: Junk
 */
 
-
-const html = generateItem("info", "Temp", 3, false);
-document.getElementById("htmlWrapper").innerHTML = html;
 
 
 
