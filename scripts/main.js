@@ -31,6 +31,13 @@ function loadData(dataPath)
 
       
       document.getElementById("htmlWrapper").innerHTML = groupsHtml;
+
+      var list = document.querySelector('ul');
+      list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+          ev.target.classList.toggle('checked');
+        }
+      }, false);
     })
     .catch (function(error)
     {
