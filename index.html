@@ -9,64 +9,52 @@
   </head>
   
   <body>
-    <!--
-    <div>
-      <i class="material-icons" style="font-size: 30px; color: black;">info</i>About
-    </div>
-    -->
-    <!--
-    <div id="levelExperienceReferencesId" class="tabContent" style="display: block">
-      <div id="levelExperienceReferencesHtmlWrapper"></div>
-    </div>
-    -->
-    <div id="htmlWrapper" style="display: block">
-    </div>
-    TEST1
+    <div id="htmlWrapper" style="display: block"></div>
   </body>
 
-  <style>
-    ul li.T1
-    {
-      background: #888888;
-      color: #ff0000;
-    }
-
-    ul li.T2
-    {
-      background: #888888;
-      color: #ff0000;
-    }
-
-    ul li.T3
-    {
-      background: #888888;
-      color: #ff0000;
-    }
-
-    ul li.T4
-    {
-      background: #888888;
-      color: #ff0000;
-    }
-  </style>
-  
-  <!--
   <script src="scripts/main.js" type="module"></script>
-  -->
   <script>
     console.log("TEST");
+
+
+    
     /**
-     * Generates HTML for guild data table row which contains the date and all guild entries for that date.
+     * Generates HTML for list item.
      *
-     * @param date Date for this particular row
-     * @param guilds Contents of the guilds from guildDataTableRows
-     * @param colorScales Chroma colorscale ranges as value in map, guild name is the key
-     * @return HTML code to generate guild data table row
+     * @param name Group name
+     * @param itemList Item list
+     * @param checked True if group is checked
+     * @returns HTML for group
+     */
+    function generateGroup(name, itemList, checked)
+    {
+      const nameHtml = name;
+      let listItemsHtml = '';
+      for (let item of itemList)
+      {
+        listItemsHtml += generateItem(item.icon, item.name, item.tier, false);
+      }
+      const checkedHtml = checked ? 'checked' : '';
+      return `
+        <ul id="${nameHtml}" class="${checkedHtml}">
+          ${listItemsHtml}
+        </ul>
+      `;
+    }
+
+    /**
+     * Generates HTML for list item.
+     *
+     * @param icon Material Icon text
+     * @param name Item name
+     * @param tier Tier number
+     * @param checked True if item is checked
+     * @returns HTML for list item
      */
     function generateItem(icon, name, tier, checked)
     {
       const tierHtml = 'T' + tier;
-      const checkedHtml = checked ? '' : '';
+      const checkedHtml = checked ? 'checked' : '';
       return `
         <li class="${tierHtml} ${checkedHtml}">
           <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}
@@ -79,6 +67,13 @@
     document.getElementById("htmlWrapper").innerHTML = html;
 
 
+    /*
+    Tier
+    1: Permanently missable
+    2: Useful/good to have
+    3: Normal
+    4: Junk
+    */
 
   </script>
 </html>

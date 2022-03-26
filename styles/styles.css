@@ -8,3 +8,27 @@ body
 {
   font-size: 20px;
 }
+
+ul li.T1
+{
+  background: #888888;
+  color: #ff0000;
+}
+
+ul li.T2
+{
+  background: #888888;
+  color: #ff9900;
+}
+
+ul li.T3
+{
+  background: #888888;
+  color: #fffb00;
+}
+
+ul li.T4
+{
+  background: #888888;
+  color: #000000;
+}
