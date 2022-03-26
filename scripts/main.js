@@ -58,15 +58,17 @@ Tier
  */
 function generateGroup(name, items, checked)
 {
-  const nameHtml = name;
+  const nameIdHtml = name;
+  const classAttributes = checked ? 'checked' : '';
+
   let listItemsHtml = '';
   for (let item of items)
   {
     listItemsHtml += generateItem(item.icon, item.name, item.tier, false);
   }
-  const checkedHtml = checked ? 'checked' : '';
+  
   return `
-    <ul id="${nameHtml}" class="${checkedHtml}">
+    <ul id="${nameIdHtml}" class="${classAttributes}">
       ${listItemsHtml}
     </ul>
   `;
@@ -83,10 +85,9 @@ function generateGroup(name, items, checked)
 */
 function generateItem(icon, name, tier, checked)
 {
-  const tierHtml = 'T' + tier;
-  const checkedHtml = checked ? 'checked' : '';
+  const classAttributes = checked ? 'checked' : 'T' + tier;
   return `
-    <li class="${tierHtml} ${checkedHtml}">
+    <li class="${tierHtml} ${classAttributes}">
       <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}
     </li>
   `;

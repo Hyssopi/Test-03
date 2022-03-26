@@ -2,6 +2,13 @@
 body
 {
   font-family: Times New Roman, Liberation Serif, serif;
+  margin: 0;
+  min-width: 250px;
+}
+
+*
+{
+  box-sizing: border-box;
 }
 
 .material-icons
@@ -9,15 +16,63 @@ body
   font-size: 20px;
 }
 
+/* Remove margins and padding from the list */
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li
+{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #EEEEEE;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* Make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked
+{
+  background: #888888;
+  color: #FFFFFF;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before
+{
+  content: '';
+  position: absolute;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
 ul li.T1
 {
-  background: #ff0000;
+  background: #FF0000;
   color: #000000;
 }
 
 ul li.T2
 {
-  background: #ff9900;
+  background: #FF9900;
   color: #000000;
 }
 
