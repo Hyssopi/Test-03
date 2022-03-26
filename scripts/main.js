@@ -32,12 +32,27 @@ function loadData(dataPath)
       
       document.getElementById("htmlWrapper").innerHTML = groupsHtml;
 
-      var list = document.querySelector('ul');
-      list.addEventListener('click', function(ev) {
-        if (ev.target.tagName === 'LI') {
-          ev.target.classList.toggle('checked');
-        }
-      }, false);
+
+
+
+
+
+      // Get all the .list elements into an Array
+      const list = Array.prototype.slice.call(document.querySelectorAll('ul'));
+
+      // Loop over the array and assign an event handler to each array item:
+      list.forEach(function(item)
+      {
+        /*
+        item.addEventListener('click', () => { 
+          listNav.listNav(obj.name);
+          listSidebarL.listSidebarL();
+          listSidebarR.listSidebarR();
+          listMain.listMain(obj.items);
+        });
+        */
+       console.log(item);
+      });
     })
     .catch (function(error)
     {
@@ -94,7 +109,7 @@ function generateItem(icon, name, tier, checked)
 {
   const classAttributes = checked ? 'checked' : 'T' + tier;
   return `
-    <li class="${tierHtml} ${classAttributes}">
+    <li class="${classAttributes}">
       <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}
     </li>
   `;
