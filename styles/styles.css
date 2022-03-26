@@ -16,13 +16,16 @@ body
   font-size: 20px;
 }
 
-/* Remove margins and padding from the list */
-ul
+.outer
 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
 
+/* Remove margins and padding from the list */
+ul
+{
   margin: 0;
   padding: 0;
 }

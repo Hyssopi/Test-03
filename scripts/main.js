@@ -85,9 +85,11 @@ function generateGroup(name, items, checked)
   }
   
   return `
-    <ul id="${nameIdHtml}" class="${classAttributes}">
-      ${listItemsHtml}
-    </ul>
+    <div class="outer">
+      <ul id="${nameIdHtml}" class="${classAttributes}">
+        ${listItemsHtml}
+      </ul>
+    </div>
   `;
 }
 
