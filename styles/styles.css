@@ -19,6 +19,10 @@ body
 /* Remove margins and padding from the list */
 ul
 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 }
