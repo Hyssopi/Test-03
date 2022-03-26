@@ -48,6 +48,28 @@ function loadData(dataPath)
           }
         }, false);
       });
+
+
+
+
+
+
+
+      
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
     })
     .catch (function(error)
     {
@@ -75,7 +97,6 @@ Tier
  */
 function generateGroup(name, items, checked)
 {
-  const nameIdHtml = name;
   const classAttributes = checked ? 'checked' : '';
 
   let listItemsHtml = '';
@@ -85,9 +106,12 @@ function generateGroup(name, items, checked)
   }
   
   return `
-    <ul id="${nameIdHtml}" class="${classAttributes}">
-      ${listItemsHtml}
-    </ul>
+    <button class="accordion">${name}</button>
+    <div class="panel">
+      <ul class="${classAttributes}">
+        ${listItemsHtml}
+      </ul>
+    </div>
   `;
 }
 
