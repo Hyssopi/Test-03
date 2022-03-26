@@ -44,8 +44,8 @@ ul li
 /* When clicked on, add a background color and strike out text */
 ul li.checked
 {
-  background: #888888;
-  color: #FFFFFF;
+  background: #888888 !important;
+  color: #FFFFFF !important;
   text-decoration: line-through;
 }
 
@@ -72,6 +72,6 @@ ul li.T1
 
 ul li.T2
 {
-  background: #FF9900;
+  background: #EEEEEE;
   color: #000000;
 }

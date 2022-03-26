@@ -102,7 +102,9 @@ function generateGroup(name, items, checked)
 */
 function generateItem(icon, name, tier, checked)
 {
-  const classAttributes = checked ? 'checked' : 'T' + tier;
+  let classAttributes = '';
+  classAttributes += 'T' + tier;
+  classAttributes += checked ? ' checked' : '';
   return `
     <li class="${classAttributes}">
       <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}

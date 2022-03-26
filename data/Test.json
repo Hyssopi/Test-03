@@ -12,19 +12,19 @@
       "items":
       [
         {
-          "icon": "",
+          "icon": "info",
           "name": "200G",
           "tier": 1
         },
         {
-          "icon": "",
+          "icon": "info",
           "name": "Shellfish Frame",
           "tier": 2
         },
         {
-          "icon": "",
+          "icon": "info",
           "name": "PhotonRay",
-          "tier": 3
+          "tier": 1
         }
       ]
     },
