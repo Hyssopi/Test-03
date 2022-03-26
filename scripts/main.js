@@ -10,9 +10,9 @@
 
 const DATA_PATH = 'data/Test.json';
 
-loadLevelExperienceDataPaths(DATA_PATH);
+loadData(DATA_PATH);
 
-function loadLevelExperienceDataPaths(dataPath)
+function loadData(dataPath)
 {
   console.info('Reading: "' + dataPath + '"');
   fetch(dataPath)
@@ -38,7 +38,63 @@ function loadLevelExperienceDataPaths(dataPath)
 }
 
 
+/*
+Tier
+1: Permanently missable
+2: Useful/good to have
+3: Normal
+4: Junk
+*/
 
+
+const html = generateItem("info", "Temp", 3, false);
+document.getElementById("htmlWrapper").innerHTML = html;
+
+
+
+/**
+ * Generates HTML for list item.
+ *
+ * @param name Group name
+ * @param itemList Item list
+ * @param checked True if group is checked
+ * @returns HTML for group
+ */
+function generateGroup(name, itemList, checked)
+{
+  const nameHtml = name;
+  let listItemsHtml = '';
+  for (let item of itemList)
+  {
+    listItemsHtml += generateItem(item.icon, item.name, item.tier, false);
+  }
+  const checkedHtml = checked ? 'checked' : '';
+  return `
+    <ul id="${nameHtml}" class="${checkedHtml}">
+      ${listItemsHtml}
+    </ul>
+  `;
+}
+
+/**
+* Generates HTML for list item.
+*
+* @param icon Material Icon text
+* @param name Item name
+* @param tier Tier number
+* @param checked True if item is checked
+* @returns HTML for list item
+*/
+function generateItem(icon, name, tier, checked)
+{
+  const tierHtml = 'T' + tier;
+  const checkedHtml = checked ? 'checked' : '';
+  return `
+    <li class="${tierHtml} ${checkedHtml}">
+      <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}
+    </li>
+  `;
+}
 
 
 
