@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-
 const DATA_PATH = 'data/Test.json';
 
 loadData(DATA_PATH);
