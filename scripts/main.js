@@ -37,21 +37,16 @@ function loadData(dataPath)
 
 
 
-      // Get all the .list elements into an Array
-      const list = Array.prototype.slice.call(document.querySelectorAll('ul'));
-
-      // Loop over the array and assign an event handler to each array item:
-      list.forEach(function(item)
+      const lists = Array.prototype.slice.call(document.querySelectorAll('ul'));
+      lists.forEach(function(list)
       {
-        /*
-        item.addEventListener('click', () => { 
-          listNav.listNav(obj.name);
-          listSidebarL.listSidebarL();
-          listSidebarR.listSidebarR();
-          listMain.listMain(obj.items);
-        });
-        */
-       console.log(item);
+        list.addEventListener('click', function(e)
+        {
+          if (e.target.tagName === 'LI')
+          {
+            e.target.classList.toggle('checked');
+          }
+        }, false);
       });
     })
     .catch (function(error)
