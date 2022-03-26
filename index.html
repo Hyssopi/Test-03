@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <link href="styles/iconfont/material-icons.css" rel="stylesheet"/>
+  <link href="styles/styles.css" rel="stylesheet"/>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Test Checklist</title>
+  </head>
+  
+  <body>
+    <!--
+    <div>
+      <i class="material-icons" style="font-size: 30px; color: black;">info</i>About
+    </div>
+    -->
+    <!--
+    <div id="levelExperienceReferencesId" class="tabContent" style="display: block">
+      <div id="levelExperienceReferencesHtmlWrapper"></div>
+    </div>
+    -->
+    <div id="htmlWrapper" style="display: block">
+    </div>
+    TEST1
+  </body>
+
+  <style>
+    ul li.T1
+    {
+      background: #888888;
+      color: #ff0000;
+    }
+
+    ul li.T2
+    {
+      background: #888888;
+      color: #ff0000;
+    }
+
+    ul li.T3
+    {
+      background: #888888;
+      color: #ff0000;
+    }
+
+    ul li.T4
+    {
+      background: #888888;
+      color: #ff0000;
+    }
+  </style>
+  
+  <!--
+  <script src="scripts/main.js" type="module"></script>
+  -->
+  <script>
+    console.log("TEST");
+    /**
+     * Generates HTML for guild data table row which contains the date and all guild entries for that date.
+     *
+     * @param date Date for this particular row
+     * @param guilds Contents of the guilds from guildDataTableRows
+     * @param colorScales Chroma colorscale ranges as value in map, guild name is the key
+     * @return HTML code to generate guild data table row
+     */
+    function generateItem(icon, name, tier, checked)
+    {
+      const tierHtml = 'T' + tier;
+      const checkedHtml = checked ? '' : '';
+      return `
+        <li class="${tierHtml} ${checkedHtml}">
+          <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}
+        </li>
+      `;
+    }
+
+
+    const html = generateItem("info", "Temp", 3, false);
+    document.getElementById("htmlWrapper").innerHTML = html;
+
+
+
+  </script>
+</html>

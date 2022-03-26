@@ -1,0 +1,76 @@
+{
+  "gameName": "Chrono Cross",
+  "titleImageUri": "images/titles/ChronoTriggerTitle.png",
+  "references":
+  [
+    "https://gamefaqs.gamespot.com/ps/196917-chrono-cross/faqs/48347"
+  ],
+  "groups":
+  [
+    {
+      "name": "Arni Village [Home World]",
+      "items":
+      [
+        {
+          "icon": "",
+          "name": "200G",
+          "tier": 3
+        },
+        {
+          "icon": "",
+          "name": "Shellfish Frame",
+          "tier": 3
+        },
+        {
+          "icon": "",
+          "name": "PhotonRay",
+          "tier": 3
+        }
+      ]
+    },
+    {
+      "name": "Lizard Rock [Home World]",
+      "items":
+      [
+        
+        {
+          "icon": "",
+          "name": "",
+          "tier": 3
+        },
+        {
+          "icon": "",
+          "name": "",
+          "tier": 3
+        },
+        {
+          "icon": "",
+          "name": "",
+          "tier": 3
+        }
+      ]
+    },
+    {
+      "name": "Lizard Rock [Another World]",
+      "items":
+      [
+        
+        {
+          "icon": "",
+          "name": "",
+          "tier": 3
+        },
+        {
+          "icon": "",
+          "name": "",
+          "tier": 3
+        },
+        {
+          "icon": "",
+          "name": "",
+          "tier": 3
+        }
+      ]
+    }
+  ]
+}
