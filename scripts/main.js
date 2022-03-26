@@ -30,6 +30,13 @@ function loadData(dataPath)
     .then(resultTemp =>
     {
       console.log(resultTemp);
+
+
+      let groupsHtml
+      for (let group of resultTemp.groups)
+      {
+        groupsHtml += generateGroup(group.name, group.items, false);
+      }
     })
     .catch (function(error)
     {
@@ -56,15 +63,15 @@ document.getElementById("htmlWrapper").innerHTML = html;
  * Generates HTML for list item.
  *
  * @param name Group name
- * @param itemList Item list
+ * @param items Item list
  * @param checked True if group is checked
  * @returns HTML for group
  */
-function generateGroup(name, itemList, checked)
+function generateGroup(name, items, checked)
 {
   const nameHtml = name;
   let listItemsHtml = '';
-  for (let item of itemList)
+  for (let item of items)
   {
     listItemsHtml += generateItem(item.icon, item.name, item.tier, false);
   }
