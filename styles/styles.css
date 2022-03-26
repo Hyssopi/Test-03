@@ -41,11 +41,23 @@ ul li
   user-select: none;
 }
 
+ul li.T1
+{
+  background: #FF0000;
+  color: #000000;
+}
+
+ul li.T2
+{
+  background: #EEEEEE;
+  color: #000000;
+}
+
 /* When clicked on, add a background color and strike out text */
 ul li.checked
 {
-  background: #888888 !important;
-  color: #FFFFFF !important;
+  background: #888888;
+  color: #FFFFFF;
   text-decoration: line-through;
 }
 
@@ -62,16 +74,4 @@ ul li.checked::before
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
-}
-
-ul li.T1
-{
-  background: #FF0000;
-  color: #000000;
-}
-
-ul li.T2
-{
-  background: #EEEEEE;
-  color: #000000;
 }
