@@ -49,14 +49,14 @@ body
   content: "\2212";
 }
 
-button div
-{
-  display: block;
-}
-
-button div.active
+button span div
 {
   display: none;
+}
+
+button span div.active
+{
+  display: block;
 }
 
 .panel
