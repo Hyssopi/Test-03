@@ -3,7 +3,6 @@ body
 {
   font-family: Times New Roman, Liberation Serif, serif;
   margin: 0;
-  min-width: 250px;
 }
 
 *
@@ -14,14 +13,13 @@ body
 .icons
 {
   font-size: 40px;
-  padding-right: 10px;
+  padding: 0px 10px;
 }
 
 .accordion
 {
   background-color: #EEEEEE;
   color: #444444;
-  cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
@@ -56,6 +54,7 @@ body
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  padding: 5px 1px 5px 20px;
 }
 
 ul
@@ -74,7 +73,7 @@ ul li
   background: #EEEEEE;
   transition: 0.2s;
   position: relative;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 12px 0px;
   
