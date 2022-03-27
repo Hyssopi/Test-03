@@ -18,11 +18,11 @@
       "items":
       [
         {
-          "icon": "category",
+          "icon": "widgets",
           "name": "Shellfish Frame"
         },
         {
-          "icon": "category",
+          "icon": "widgets",
           "name": "Heckran Bone"
         },
         {
@@ -30,7 +30,7 @@
           "name": "Poshul"
         },
         {
-          "icon": "category",
+          "icon": "widgets",
           "name": "Shark Tooth"
         }
       ]
@@ -40,7 +40,7 @@
       "items":
       [
         {
-          "icon": "highlight_off",
+          "icon": "security",
           "name": "Boss"
         },
         {
@@ -58,7 +58,7 @@
       "items":
       [
         {
-          "icon": "category",
+          "icon": "widgets",
           "name": "Safety Gear"
         }
       ]
@@ -68,7 +68,7 @@
       "items":
       [
         {
-          "icon": "category",
+          "icon": "widgets",
           "name": "Turn Red"
         }
       ]

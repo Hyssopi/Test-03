@@ -125,11 +125,20 @@ function generateItem(icon, name, checked)
 
   const iconColors =
   {
-    'category': 'black',
+    'widgets': 'black',
     'info': 'blue',
     'highlight_off': 'blue',
+    'security': 'blue',
     'priority_high': 'red',
     
+    'lightbulb': 'green',
+    'person_add': 'green',
+    'my_location': 'green',
+    'my_location': 'green',
+    'my_location': 'green',
+    'my_location': 'green',
+    'my_location': 'green',
+    'my_location': 'green',
     'warning_amber': 'red',
     'error_outline': 'green',
     'announcement': 'green',
