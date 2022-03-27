@@ -49,12 +49,12 @@ body
   content: "\2212";
 }
 
-button div span
+button span
 {
   display: none;
 }
 
-button div span.active
+button span.active
 {
   display: block;
 }
