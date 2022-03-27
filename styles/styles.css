@@ -10,6 +10,11 @@ body
   box-sizing: border-box;
 }
 
+i
+{
+  text-decoration: none;
+}
+
 .icons
 {
   font-size: 40px;
