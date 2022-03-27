@@ -124,7 +124,7 @@ function generateItem(icon, name, checked)
   let classAttributes = checked ? ' checked' : '';
   return `
     <li class="${classAttributes}">
-      <div>
+      <div style="display: flex; align-items: center;">
         <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}
       </div>
     </li>
