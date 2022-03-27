@@ -46,6 +46,10 @@ function loadData(dataPath)
           {
             e.target.classList.toggle('checked');
           }
+          if (e.target.tagName === 'text')
+          {
+            e.target.classList.toggle('checked');
+          }
         }, false);
       };
 
@@ -126,7 +130,8 @@ function generateItem(icon, name, checked)
   return `
     <li class="${classAttributes}">
       <div style="pointer-events: none; display: flex; align-items: center;">
-        <i class="material-icons icons" style="color: black;">${icon}</i>${name}
+        <i class="material-icons icons" style="color: black;">${icon}</i>
+        <div class="text">${name}</div>
       </div>
     </li>
   `;

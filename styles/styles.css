@@ -72,7 +72,6 @@ ul li
   list-style-type: none;
   font-size: 50px;
   background: #EEEEEE;
-  transition: 0.0s;
   position: relative;
   border: 2px solid black;
   border-radius: 10px;
@@ -89,5 +88,9 @@ ul li.checked
 {
   background: #888888;
   color: #FFFFFF;
+}
+
+.text.checked
+{
   text-decoration: line-through;
 }
