@@ -36,7 +36,7 @@ function loadData(dataPath)
 
 
 
-
+      // List script
       const lists = Array.prototype.slice.call(document.querySelectorAll('ul'));
       lists.forEach(function(list)
       {
@@ -55,19 +55,24 @@ function loadData(dataPath)
 
 
 
-      
-      var acc = document.getElementsByClassName("accordion");
+      // Accordion script
+      var acc = document.getElementsByClassName('accordion');
       var i;
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
+      for (i = 0; i < acc.length; i++)
+      {
+        acc[i].addEventListener('click', function()
+        {
+          this.classList.toggle('active');
           var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
+          if (panel.style.maxHeight)
+          {
             panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          } 
+          }
+          else
+          {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
         });
       }
     })
@@ -102,7 +107,7 @@ function generateGroup(name, items, checked)
   let listItemsHtml = '';
   for (let item of items)
   {
-    listItemsHtml += generateItem(item.icon, item.name, item.tier, false);
+    listItemsHtml += generateItem(item.icon, item.name, false);
   }
   
   return `
@@ -120,15 +125,12 @@ function generateGroup(name, items, checked)
 *
 * @param icon Material Icon text
 * @param name Item name
-* @param tier Tier number
 * @param checked True if item is checked
 * @returns HTML for list item
 */
-function generateItem(icon, name, tier, checked)
+function generateItem(icon, name, checked)
 {
-  let classAttributes = '';
-  classAttributes += 'T' + tier;
-  classAttributes += checked ? ' checked' : '';
+  let classAttributes = checked ? ' checked' : '';
   return `
     <li class="${classAttributes}">
       <i class="material-icons" style="font-size: 30px; color: black;">${icon}</i>${name}

@@ -13,18 +13,15 @@
       [
         {
           "icon": "info",
-          "name": "200G",
-          "tier": 1
+          "name": "200G"
+        },
+        {
+          "icon": "info priority_high",
+          "name": "Shellfish Frame"
         },
         {
           "icon": "info",
-          "name": "Shellfish Frame",
-          "tier": 2
-        },
-        {
-          "icon": "info",
-          "name": "PhotonRay",
-          "tier": 1
+          "name": "PhotonRay"
         }
       ]
     },
@@ -35,40 +32,15 @@
         
         {
           "icon": "",
-          "name": "",
-          "tier": 3
+          "name": ""
         },
         {
           "icon": "",
-          "name": "",
-          "tier": 3
+          "name": ""
         },
         {
           "icon": "",
-          "name": "",
-          "tier": 3
-        }
-      ]
-    },
-    {
-      "name": "Lizard Rock [Another World]",
-      "items":
-      [
-        
-        {
-          "icon": "",
-          "name": "",
-          "tier": 3
-        },
-        {
-          "icon": "",
-          "name": "",
-          "tier": 3
-        },
-        {
-          "icon": "",
-          "name": "",
-          "tier": 3
+          "name": ""
         }
       ]
     }

@@ -87,18 +87,6 @@ ul li
   user-select: none;
 }
 
-ul li.T1
-{
-  background: #FFFF00;
-  color: #000000;
-}
-
-ul li.T2
-{
-  background: #EEEEEE;
-  color: #000000;
-}
-
 /* When clicked on, add a background color and strike out text */
 ul li.checked
 {
