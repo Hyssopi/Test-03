@@ -72,8 +72,8 @@ function loadData(dataPath)
             panel.style.maxHeight = panel.scrollHeight + 'px';
           }
 
-          console.log(e.target);
-          e.target.classList.toggle('active');
+          console.log(e.target.querySelector('div'));
+          e.target.querySelector('div').classList.toggle('active');
         });
       }
     })
