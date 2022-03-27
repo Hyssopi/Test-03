@@ -111,20 +111,6 @@ function generateGroup(name, items, checked)
   `;
 }
 
-function findIconColor(icon)
-{
-  let color = 'black';
-  switch (icon)
-  {
-    case 'info':
-    {
-      color = 'green';
-      break;
-    }
-  }
-  return color;
-}
-
 /**
 * Generates HTML for list item.
 *
@@ -144,7 +130,7 @@ function generateItem(icon, name, checked)
     'check': 'green',
   };
 
-  const temp2 = icon.split(' ').map(i => `<i class="material-icons icons" style="color: ${temp[icon]};">${icon}</i>`);
+  const temp2 = icon.split(' ').map(i => `<i class="material-icons icons" style="color: ${temp[i]};">${i}</i>`);
 
 
 
