@@ -90,7 +90,7 @@ ul li.checked
   color: #FFFFFF;
 }
 
-.text.checked
+.text-checked
 {
   text-decoration: line-through;
 }

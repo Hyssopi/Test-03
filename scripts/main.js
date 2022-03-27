@@ -42,13 +42,14 @@ function loadData(dataPath)
       {
         list.addEventListener('click', function(e)
         {
+          console.log(e.target);
           if (e.target.tagName === 'LI')
           {
             e.target.classList.toggle('checked');
           }
-          if (e.target.tagName === 'text')
+          if (e.target.tagName === 'div')
           {
-            e.target.classList.toggle('checked');
+            e.target.classList.toggle('text-checked');
           }
         }, false);
       };
