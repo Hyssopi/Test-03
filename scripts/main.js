@@ -26,7 +26,7 @@ function loadData(dataPath)
       let groupsHtml = '';
       for (let group of resultTemp.groups)
       {
-        groupsHtml += generateGroup(group.name, group.items, false);
+        groupsHtml += generateGroup(group.section, group.name, group.items, false);
       }
 
       
@@ -61,7 +61,7 @@ function loadData(dataPath)
       {
         accordion.addEventListener('click', function(e)
         {
-          //console.log(e.target);
+          console.log(e.target);
           this.classList.toggle('active');
           const panel = this.nextElementSibling;
           if (panel.style.maxHeight)

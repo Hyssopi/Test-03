@@ -28,7 +28,7 @@
           "name": "Heckran Bone"
         },
         {
-          "icon": "info",
+          "icon": "low_priority",
           "name": "Poshul"
         },
         {
@@ -69,7 +69,7 @@
       "items":
       [
         {
-          "icon": "widgets",
+          "icon": "low_priority",
           "name": "TurnRed"
         }
       ]
