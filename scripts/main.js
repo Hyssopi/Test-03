@@ -38,7 +38,7 @@ function loadData(dataPath)
 
       // List script
       const lists = Array.prototype.slice.call(document.querySelectorAll('ul'));
-      lists.forEach(function(list)
+      for (const list of lists)
       {
         list.addEventListener('click', function(e)
         {
@@ -47,7 +47,7 @@ function loadData(dataPath)
             e.target.classList.toggle('checked');
           }
         }, false);
-      });
+      };
 
 
 
@@ -56,15 +56,13 @@ function loadData(dataPath)
 
 
       // Accordion script
-      var acc = document.getElementsByClassName('accordion');
-      var i;
-
-      for (i = 0; i < acc.length; i++)
+      const accordions = document.getElementsByClassName('accordion');
+      for (const accordion of accordions)
       {
-        acc[i].addEventListener('click', function()
+        accordion[i].addEventListener('click', function()
         {
           this.classList.toggle('active');
-          var panel = this.nextElementSibling;
+          const panel = this.nextElementSibling;
           if (panel.style.maxHeight)
           {
             panel.style.maxHeight = null;
@@ -81,13 +79,6 @@ function loadData(dataPath)
       console.error('Error in fetching: ' + error);
     })
 }
-
-
-/*
-Tier
-1: Known missable
-2: Items of interest
-*/
 
 
 

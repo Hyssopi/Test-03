@@ -58,27 +58,23 @@ body
   transition: max-height 0.2s ease-out;
 }
 
-/* Remove margins and padding from the list */
 ul
 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 }
 
-/* Style the list items */
 ul li
 {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #EEEEEE;
   font-size: 18px;
+  background: #EEEEEE;
   transition: 0.2s;
+  position: relative;
+  padding: 12px 0px 12px 20px;
   
   /* Make the list items unselectable */
   -webkit-user-select: none;
@@ -87,7 +83,6 @@ ul li
   user-select: none;
 }
 
-/* When clicked on, add a background color and strike out text */
 ul li.checked
 {
   background: #888888;
@@ -96,6 +91,7 @@ ul li.checked
 }
 
 /* Add a "checked" mark when clicked on */
+/*
 ul li.checked::before
 {
   content: '';
@@ -109,3 +105,4 @@ ul li.checked::before
   height: 15px;
   width: 7px;
 }
+*/
