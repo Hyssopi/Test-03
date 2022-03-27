@@ -8,20 +8,30 @@
   "groups":
   [
     {
+      "name": "Dream Sequence",
+      "items":
+      [
+      ]
+    },
+    {
       "name": "Arni Village [Home World]",
       "items":
       [
         {
-          "icon": "info",
-          "name": "200G"
-        },
-        {
-          "icon": "info priority_high",
+          "icon": "category",
           "name": "Shellfish Frame"
         },
         {
+          "icon": "category",
+          "name": "Heckran Bone"
+        },
+        {
           "icon": "info",
-          "name": "PhotonRay"
+          "name": "Poshul"
+        },
+        {
+          "icon": "category",
+          "name": "Shark Tooth"
         }
       ]
     },
@@ -29,18 +39,37 @@
       "name": "Lizard Rock [Home World]",
       "items":
       [
-        
         {
-          "icon": "",
-          "name": ""
+          "icon": "highlight_off",
+          "name": "Boss"
         },
         {
-          "icon": "",
-          "name": ""
+          "icon": "priority_high",
+          "name": "I remember"
         },
         {
-          "icon": "",
-          "name": ""
+          "icon": "priority_high",
+          "name": "We'll never forget this day!"
+        }
+      ]
+    },
+    {
+      "name": "Lizard Rock [Another World]",
+      "items":
+      [
+        {
+          "icon": "category",
+          "name": "Safety Gear"
+        }
+      ]
+    },
+    {
+      "name": "Arni Village [Another World]",
+      "items":
+      [
+        {
+          "icon": "category",
+          "name": "Turn Red"
         }
       ]
     }

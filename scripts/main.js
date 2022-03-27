@@ -125,9 +125,15 @@ function generateItem(icon, name, checked)
 
   const iconColors =
   {
+    'category': 'black',
     'info': 'blue',
+    'highlight_off': 'blue',
     'priority_high': 'red',
-    'check': 'green',
+    
+    'warning_amber': 'red',
+    'error_outline': 'green',
+    'announcement': 'green',
+    'my_location': 'green',
   };
 
   const iconsHtml = icon.split(' ').map(i => `<i class="material-icons icons" style="color: ${iconColors[i]};">${i}</i>`);
