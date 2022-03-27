@@ -8,12 +8,14 @@
   "groups":
   [
     {
+      "section": "00",
       "name": "Dream Sequence",
       "items":
       [
       ]
     },
     {
+      "section": "01",
       "name": "Arni Village [Home World]",
       "items":
       [
@@ -36,13 +38,10 @@
       ]
     },
     {
+      "section": "02",
       "name": "Lizard Rock [Home World]",
       "items":
       [
-        {
-          "icon": "security",
-          "name": "Boss"
-        },
         {
           "icon": "priority_high",
           "name": "\"I remember\""
@@ -54,6 +53,7 @@
       ]
     },
     {
+      "section": "03",
       "name": "Lizard Rock [Another World]",
       "items":
       [
@@ -64,12 +64,28 @@
       ]
     },
     {
+      "section": "04",
       "name": "Arni Village [Another World]",
       "items":
       [
         {
           "icon": "widgets",
           "name": "TurnRed"
+        }
+      ]
+    },
+    {
+      "section": "05",
+      "name": "Cape Howl [Another World]",
+      "items":
+      [
+        {
+          "icon": "priority_high",
+          "name": "Refuse Kid"
+        },
+        {
+          "icon": "widgets",
+          "name": "Mojo"
         }
       ]
     }

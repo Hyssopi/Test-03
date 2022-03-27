@@ -59,8 +59,9 @@ function loadData(dataPath)
       const accordions = document.getElementsByClassName('accordion');
       for (const accordion of accordions)
       {
-        accordion.addEventListener('click', function()
+        accordion.addEventListener('click', function(e)
         {
+          console.log(e.target);
           this.classList.toggle('active');
           const panel = this.nextElementSibling;
           if (panel.style.maxHeight)
@@ -86,12 +87,13 @@ function loadData(dataPath)
 /**
  * Generates HTML for list item.
  *
+ * @param section Section
  * @param name Group name
  * @param items Item list
  * @param checked True if group is checked
  * @returns HTML for group
  */
-function generateGroup(name, items, checked)
+function generateGroup(section, name, items, checked)
 {
   const classAttributes = checked ? 'checked' : '';
 
@@ -102,7 +104,12 @@ function generateGroup(name, items, checked)
   }
   
   return `
-    <button class="accordion">${name}</button>
+    <button class="accordion">
+      [${section}] 
+      <div class="${classAttributes}">
+        ${name}
+      </div>
+    </button>
     <div class="panel">
       <ul class="${classAttributes}">
         ${listItemsHtml}
@@ -129,7 +136,7 @@ function generateItem(icon, name, checked)
     'widgets': 'black',
     // Known missables
     'priority_high': 'red',
-    // Boss
+
     'security': 'blue',
     'info': 'blue',
     'highlight_off': 'blue',

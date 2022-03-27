@@ -49,6 +49,16 @@ body
   content: "\2212";
 }
 
+button div
+{
+  display: block;
+}
+
+button div.checked
+{
+  display: none;
+}
+
 .panel
 {
   background-color: white;
