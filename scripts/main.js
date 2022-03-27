@@ -40,9 +40,6 @@ function loadData(dataPath)
       const lists = Array.prototype.slice.call(document.querySelectorAll('ul'));
       for (const list of lists)
       {
-        list.addEventListener('click', listCallback);
-        list.addEventListener('touchstart', listCallback);
-        /*
         list.addEventListener('click', function(e)
         {
           if (e.target.tagName === 'LI')
@@ -50,7 +47,6 @@ function loadData(dataPath)
             e.target.classList.toggle('checked');
           }
         }, false);
-        */
       };
 
 
@@ -63,9 +59,6 @@ function loadData(dataPath)
       const accordions = document.getElementsByClassName('accordion');
       for (const accordion of accordions)
       {
-        accordion.addEventListener('click', accordionCallback);
-        accordion.addEventListener('touchstart', accordionCallback);
-        /*
         accordion.addEventListener('click', function()
         {
           this.classList.toggle('active');
@@ -79,7 +72,6 @@ function loadData(dataPath)
             panel.style.maxHeight = panel.scrollHeight + 'px';
           }
         });
-        */
       }
     })
     .catch (function(error)
@@ -88,27 +80,7 @@ function loadData(dataPath)
     })
 }
 
-function listCallback(event)
-{
-  if (e.target.tagName === 'LI')
-  {
-    e.target.classList.toggle('checked');
-  }
-}
 
-function accordionCallback(event)
-{
-  this.classList.toggle('active');
-  const panel = this.nextElementSibling;
-  if (panel.style.maxHeight)
-  {
-    panel.style.maxHeight = null;
-  }
-  else
-  {
-    panel.style.maxHeight = panel.scrollHeight + 'px';
-  }
-}
 
 
 /**
