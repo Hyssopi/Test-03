@@ -14,6 +14,7 @@ body
 .icons
 {
   font-size: 40px;
+  padding-right: 10px;
 }
 
 .accordion
@@ -51,7 +52,7 @@ body
 
 .panel
 {
-  padding: 0 18px;
+  padding-left: 20px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -74,6 +75,8 @@ ul li
   background: #EEEEEE;
   transition: 0.2s;
   position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 12px 0px 12px 20px;
   
   /* Make the list items unselectable */
