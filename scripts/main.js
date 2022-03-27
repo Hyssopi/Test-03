@@ -125,11 +125,14 @@ function generateItem(icon, name, checked)
 
   const iconColors =
   {
+    // Items of interest
     'widgets': 'black',
+    // Known missables
+    'priority_high': 'red',
+    // Boss
+    'security': 'blue',
     'info': 'blue',
     'highlight_off': 'blue',
-    'security': 'blue',
-    'priority_high': 'red',
     
     'lightbulb': 'green',
     'person_add': 'green',
