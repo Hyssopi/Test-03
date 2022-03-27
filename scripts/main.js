@@ -59,7 +59,7 @@ function loadData(dataPath)
       const accordions = document.getElementsByClassName('accordion');
       for (const accordion of accordions)
       {
-        accordion[i].addEventListener('click', function()
+        accordion.addEventListener('click', function()
         {
           this.classList.toggle('active');
           const panel = this.nextElementSibling;
