@@ -122,6 +122,7 @@ function generateGroup(name, items, checked)
 function generateItem(icon, name, checked)
 {
   let classAttributes = checked ? ' checked' : '';
+  // icons space separated
   return `
     <li class="${classAttributes}">
       <div style="pointer-events: none; display: flex; align-items: center;">
