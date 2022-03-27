@@ -125,7 +125,7 @@ function generateItem(icon, name, checked)
   return `
     <li class="${classAttributes}">
       <div style="pointer-events: none; display: flex; align-items: center;">
-        <i class="icons" style="color: red;">${icon}</i>${name}
+        <i class="material-icons icons" style="color: red;">${icon}</i>${name}
       </div>
     </li>
   `;
