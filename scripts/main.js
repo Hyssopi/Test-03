@@ -61,7 +61,6 @@ function loadData(dataPath)
       {
         accordion.addEventListener('click', function(e)
         {
-          console.log(e.target);
           this.classList.toggle('active');
           const panel = this.nextElementSibling;
           if (panel.style.maxHeight)
@@ -72,6 +71,9 @@ function loadData(dataPath)
           {
             panel.style.maxHeight = panel.scrollHeight + 'px';
           }
+
+          console.log(e.target);
+          e.target.classList.toggle('active');
         });
       }
     })
