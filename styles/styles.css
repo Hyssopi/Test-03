@@ -54,7 +54,7 @@ button div
   display: block;
 }
 
-button div.checked
+button div.active
 {
   display: none;
 }
