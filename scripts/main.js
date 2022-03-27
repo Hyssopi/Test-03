@@ -106,9 +106,7 @@ function generateGroup(section, name, items, checked)
   
   return `
     <button class="accordion">
-      <span>
-        [${section}] <span class="${classAttributes}">${name}</span>
-      </span>
+      [${section}] <span class="${classAttributes}">${name}</span>
     </button>
     <div class="panel">
       <ul class="${classAttributes}">
