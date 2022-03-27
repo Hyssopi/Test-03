@@ -151,7 +151,7 @@ function generateItem(icon, name, checked)
   return `
     <li class="${classAttributes}">
       <div style="pointer-events: none; display: flex; align-items: center;">
-        ${temp2.join()}
+        ${temp2.join(' ')}
         ${name}
       </div>
     </li>
