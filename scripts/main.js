@@ -42,14 +42,9 @@ function loadData(dataPath)
       {
         list.addEventListener('click', function(e)
         {
-          console.log(e.target);
           if (e.target.tagName === 'LI')
           {
             e.target.classList.toggle('checked');
-          }
-          if (e.target.tagName === 'div')
-          {
-            e.target.classList.toggle('text-checked');
           }
         }, false);
       };
@@ -131,8 +126,7 @@ function generateItem(icon, name, checked)
   return `
     <li class="${classAttributes}">
       <div style="pointer-events: none; display: flex; align-items: center;">
-        <i class="material-icons icons" style="color: black;">${icon}</i>
-        <div class="text">${name}</div>
+        <i class="material-icons icons" style="color: black;">${icon}</i>${name}
       </div>
     </li>
   `;

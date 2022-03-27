@@ -12,7 +12,7 @@ body
 
 .icons
 {
-  font-size: 60px;
+  font-size: 70px;
   padding: 0px 30px;
 }
 
@@ -23,7 +23,7 @@ body
   border: 1px solid black;
   outline: none;
   text-align: left;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   transition: 0.4s;
   padding: 40px;
@@ -70,7 +70,7 @@ ul
 ul li
 {
   list-style-type: none;
-  font-size: 30px;
+  font-size: 40px;
   background: #EEEEEE;
   position: relative;
   border: 2px solid black;
@@ -88,9 +88,4 @@ ul li.checked
 {
   background: #888888;
   color: #FFFFFF;
-}
-
-.text-checked
-{
-  text-decoration: line-through;
 }
