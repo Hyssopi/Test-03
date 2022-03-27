@@ -61,7 +61,7 @@ function loadData(dataPath)
       {
         accordion.addEventListener('click', function(e)
         {
-          console.log(e.target);
+          //console.log(e.target);
           this.classList.toggle('active');
           const panel = this.nextElementSibling;
           if (panel.style.maxHeight)
@@ -136,6 +136,8 @@ function generateItem(icon, name, checked)
     'widgets': 'black',
     // Known missables
     'priority_high': 'red',
+    // Low priority, but good to have
+    'low_priority': 'black',
 
     'security': 'blue',
     'info': 'blue',
@@ -143,7 +145,6 @@ function generateItem(icon, name, checked)
     
     'lightbulb': 'green',
     'person_add': 'green',
-    'my_location': 'green',
     'my_location': 'green',
     'my_location': 'green',
     'my_location': 'green',
