@@ -123,21 +123,19 @@ function generateItem(icon, name, checked)
 {
   let classAttributes = checked ? ' checked' : '';
 
-  const temp =
+  const iconColors =
   {
     'info': 'blue',
     'priority_high': 'red',
     'check': 'green',
   };
 
-  const temp2 = icon.split(' ').map(i => `<i class="material-icons icons" style="color: ${temp[i]};">${i}</i>`);
-
-
+  const iconsHtml = icon.split(' ').map(i => `<i class="material-icons icons" style="color: ${iconColors[i]};">${i}</i>`);
 
   return `
     <li class="${classAttributes}">
       <div style="pointer-events: none; display: flex; align-items: center;">
-        ${temp2.join(' ')}
+        ${iconsHtml.join(' ')}
         ${name}
       </div>
     </li>
