@@ -20,13 +20,13 @@ body
 {
   background-color: #EEEEEE;
   color: #444444;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
+  border: 1px solid black;
   outline: none;
+  text-align: left;
   font-size: 40px;
   transition: 0.4s;
+  padding: 18px;
+  width: 100%;
 }
 
 .active
@@ -71,17 +71,17 @@ ul li
   list-style-type: none;
   font-size: 30px;
   background: #EEEEEE;
-  transition: 0.2s;
+  transition: 0.0s;
   position: relative;
   border: 2px solid black;
   border-radius: 10px;
   padding: 12px 0px;
   
   /* Make the list items unselectable */
+  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
 }
 
 ul li.checked
