@@ -71,8 +71,6 @@ function loadData(dataPath)
           {
             panel.style.maxHeight = panel.scrollHeight + 'px';
           }
-
-          e.target.querySelector('span').classList.toggle('active');
         });
       }
     })
@@ -106,8 +104,7 @@ function generateGroup(section, name, items, checked)
   
   return `
     <button class="accordion">
-      <span class="${classAttributes}">[${section}] <span>${name}</span></span>
-      <span class="${classAttributes}"><span>[${section}] <span>${name}</span></span></span>
+      <span>[${section}] ${name}</span>
     </button>
     <div class="panel">
       <ul class="${classAttributes}">

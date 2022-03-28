@@ -49,16 +49,6 @@ body
   content: "\2212";
 }
 
-button span
-{
-  display: none;
-}
-
-button span.active
-{
-  display: block;
-}
-
 .panel
 {
   background-color: white;
